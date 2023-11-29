@@ -1,143 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Introduction</title>
+    <style>
+        .wrapper {
+            position: absolute;
+            top: 90px; /* Adjust the distance from the top */
+            left:65%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        a {
+    display: block;
+    width: 132px;
+    height: 32px;
+    line-height: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #838383;
+    border: 2px solid #7c7c7c;
+    border-radius: 40px;
+    overflow: hidden;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+        a span {
+            position: relative;
+            z-index: 2;
+        }
+
+        a:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #108AF5;
+            transition: all .35s;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        a:hover:after {
+            width: 100%;
+        }
+        .button {
+            margin-left: 30px; /* Adjust margin as needed */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url(bg1.jpg);
+            background-color: #000;
+            color: #666;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1700px;
+            padding: 0px;
+            background-color: #101010;
+            color: #666;
+            border-radius: 10px;
+            margin-right: 150px;
+            margin-bottom: 100px;
+        }
+
+        img {
+            width: 400px;
+            height: auto;
+            border-width: 10px;
+            border-radius: 40px;
+            /* Curved edges */
+            overflow: hidden;
+            /* Ensure curved edges are applied */
+            margin-right: 50px;
+        }
+
+        h1, p {
+            margin-left: 100px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #108AF5;
+            /* White color for the heading */
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: white;
+        }
+
+        h1.secondary {
+            color: white;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="personal">
-        <fieldset style="background-color: rgba(239, 243, 30, 0.938);">
-            <legend>Personal</legend>
-
-
-            <h1 style="margin-left: 570px; margin-right: 600px;">Mahim Sharma </h1>
-            <img src="mhim.jpeg" height="200px" weight="100px">
-            <p style="margin-left: 500px; margin-right: 500px;">
-                <b>
-                    <u> </u>
-                    <br>
-                    <u>Email: </u>
-                </b>msstyles41@gmail.com
-                <b>|</b>
-                <b>
-                    <u>Mobile: </u>
-                </b>+917976211974
-            </p>
-        </fieldset>
+    <div class="wrapper">
+        <a href="#"><span>HOME</span></a>
+        <a href="about_me.html" class="button"><span>ABOUT</span></a>
+        <a href="contact1.html" class="button"><span>CONTACT</span></a>
     </div>
-
-    <p style="margin-left: 200px; margin-right: 200px;">
-        <b>_________________________________________________________________________________________________________</b>
-    </p>
-
-    <div class="academics">
-        <fieldset style="background-color: lightgreen;">
-            <legend>Academics</legend>
-
-            <h2 style="margin-left: 250px; margin-right: 250px; color: darkcyan;">
-                <u>EDUCATION:</u>
-            </h2>
-
-            <p style="margin-left: 250px; margin-right: 250px;">
-                <b style="font-size: x-large;">UPES</b>
-                <br>University of Petroleum and Energy Studies
-                <br>Dehradun | Uttrakhand | 248001
+    <img src="port.jpeg" alt="Your Photo">
+    <div class="container">
+        <div>
+            <h1>--&nbsp;I'M Mahim Sharma.</h1>
+            <h1 class="secondary">&nbsp;&nbsp;&nbsp;&nbsp;Web Developer</h1>
+            <p>
+                I'm a student of UPES currently pursuing B.tech computer science<br> with specialization in Full Stack AI.
             </p>
-
-            <p style="margin-left: 250px; margin-right: 250px;">
-                <b>B.Tech. CSE (Full Stack AI)</b>
-                <br>(2022-Present (Graduating Year: 2026)) | 2nd Year
-                <br>Current CGPA: 8.01
-            </p>
-
-            <p style="margin-left: 250px; margin-right: 250px;">
-                <b style="font-size: x-large;">Pt. Uma Dutt Public School
-                    <br>School (CBSE-Board)
-                </b>
-                <br>Dholpur | Rajasthan | India
-                <br>Class XII: 92.6% | Class X: 92.4%
-            </p>
-        </fieldset>
-    </div>
-
-    <div class="profileLink">
-        <fieldset style="background-color: rgb(137, 190, 218);">
-            <legend>Profile Links</legend>
-
-            <h2 style="margin-left: 250px; margin-right: 250px; color: darkcyan;">
-                <u>LINKS:</u>
-            </h2>
-
-            <ul style="margin-left: 225px; margin-right: 225px;">
-                <li>
-                    <a href="https://www.linkedin.com/in/mahim-sharma-ab0a23247" target="_blank""><b>LinkedIn</b></a>
-                    </li>
-
-                    <li>
-                        <a href=" https://instagram.com/_ms_styles_._?igshid=MzNlNGNkZWQ4Mg==" target="
-                        _blank"><b>Instagram</b></a>
-                </li>
-
-
-            </ul>
-        </fieldset>
-    </div>
-
-    <div class="courseWork">
-        <fieldset style="background-color: lightsalmon;">
-            <legend>Course Work</legend>
-
-            <h2 style="margin-left: 250px; margin-right: 250px; color: rgb(206, 233, 134);">
-                <u>COURSEWORK:</u>
-            </h2>
-
-            <ul style="margin-left: 225px; margin-right: 225px;">
-                <li>Programming in C/C++</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Object Oriented Programming</li>
-                <li>Algorithm Design and Analysis</li>
-                <li>Programming in Python</li>
-                <li>Mathematics</li>
-            </ul>
-        </fieldset>
-    </div>
-
-    <div class="skills">
-        <fieldset style="background-color: lightskyblue;">
-            <legend>Skills</legend>
-
-            <h2 style="margin-left: 250px; margin-right: 250px; color: darkcyan;">
-                <u>SKILLS:</u>
-            </h2>
-
-            <h3 style="margin-left: 250px; margin-right: 250px;">PROGRAMMING</h3>
-
-            <ul style="margin-left: 225px; margin-right: 225px;">
-                <li>C</li>
-                <li>C++</li>
-                <li>Python</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Object Oriented Programming</li>
-                <li>Java</li>
-                <li>Kotlin</li>
-            </ul>
-
-            <h3 style="margin-left: 250px; margin-right: 250px;">OTHERS</h3>
-
-            <ul style="margin-left: 225px; margin-right: 225px;">
-                <li>Problem Solving</li>
-                <li>Algorithm Design</li>
-                <li>Complexity Analysis</li>
-                <li>Analytical Skills</li>
-                <li>Critical Thinking</li>
-                <li>Google Workspace</li>
-                <li>Microsoft Office</li>
-                <li>Visual Studio Code</li>
-                <li>GitHub</li>
-                <li>Communication Skills</li>
-            </ul>
-        </fieldset>
+        </div>
     </div>
 </body>
 
